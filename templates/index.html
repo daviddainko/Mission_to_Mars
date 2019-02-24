@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mars info</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel='stylesheet' type="text/css" href="mars.css">
+</head>
+
+<body class='text-white'>
+    <div class='container'>
+        <div class='jumpotron text-center'>
+            <h1 class='display-4'>Mission to Mars</h1>
+            <p><a class='btn btn-primary btn-lg text-white' href='/scrape' role="button"></a>Get Data</p>
+        <!-- everything should be in mars_info.(news_title/news_para/mars_featured_image/mars_weather/mars_facts_table/hemisphere_images) -->
+        </div>
+        
+        <div class="row">
+        <div class='page-header'><h1>Latest Mars News</h1>
+        </div>
+            <div class="container-fluid">
+                <strong><h2>InSight Is the Newest Mars Weather Service</h2>
+                <p>By collecting data around the clock, NASA's lander will provide unique science about the Martian surface.</p>
+            </div>
+            <div class='container-fluid'>
+                <div class="row">
+                    <div class='col-md-7'>
+                        <h3>Featured Image</h3>
+                        <img src = 'https://www.jpl.nasa.gov/spaceimages/images/wallpaper/PIA17794-1920x1200.jpg'alt='featured image' style="width: 90%;">
+                    </div>
+                        <div class="col-md-5">
+                        <ul  id = 'weather_pad' style="border-style: solid;">
+                            <h3 id = 'weather_marg' >Current Mars Weather</h3>
+                            InSight sol 84 (2019-02-20) low -95.1ºC (-139.2ºF) high -13.2ºC (8.3ºF)
+                            winds from the SW at 4.1 m/s (9.3 mph) gusting to 10.8 m/s (24.2 mph)
+                        </ul>
+                        <ul>
+                            <h3>Mars Facts</h3>
+                            <table border="1" class="dataframe">  <thead>    <tr style="text-align: right;">      <th></th>      <th>Values</th>    </tr>    <tr>      <th>Parameter</th>      <th></th>    </tr>  </thead>  <tbody>    <tr>      <th>Equatorial Diameter:</th>      <td>6,792 km</td>    </tr>    <tr>      <th>Polar Diameter:</th>      <td>6,752 km</td>    </tr>    <tr>      <th>Mass:</th>      <td>6.42 x 10^23 kg (10.7% Earth)</td>    </tr>    <tr>      <th>Moons:</th>      <td>2 (Phobos &amp; Deimos)</td>    </tr>    <tr>      <th>Orbit Distance:</th>      <td>227,943,824 km (1.52 AU)</td>    </tr>    <tr>      <th>Orbit Period:</th>      <td>687 days (1.9 years)</td>    </tr>    <tr>      <th>Surface Temperature:</th>      <td>-153 to 20 °C</td>    </tr>    <tr>      <th>First Record:</th>      <td>2nd millennium BC</td>    </tr>    <tr>      <th>Recorded By:</th>      <td>Egyptian astronomers</td>    </tr>  </tbody></table>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid">
+                <h3 align='center'>Mars Hemispheres</h3>
+                <div class='body'>
+                    <div class="row">
+                        <div class='col-md-6'>
+                                <img src="https://astrogeology.usgs.gov//cache/images/dfaf3849e74bf973b59eb50dab52b583_cerberus_enhanced.tif_thumb.png" alt="hemisphere" style="width:50%;">
+                                <div class="caption" style="font-weight:bold;">
+                                    Cerberus Hemisphere Enhanced
+                                </div>
+                                <img src="https://astrogeology.usgs.gov//cache/images/7677c0a006b83871b5a2f66985ab5857_schiaparelli_enhanced.tif_thumb.png" alt="hemisphere" style="width:50%;">
+                                <div class="caption" style="font-weight:bold;">
+                                    Schiaparelli Hemisphere Enhanced
+                                </div>
+                        <!-- insert {% for hemisphere ...} statement -->
+                        </div>
+                        <div class='col-md-6'>
+                                <img src="https://astrogeology.usgs.gov//cache/images/aae41197e40d6d4f3ea557f8cfe51d15_syrtis_major_enhanced.tif_thumb.png" alt="hemisphere" style="width:50%;">
+                                <div class="caption" style="font-weight:bold;">
+                                    Syrtis Major Hemisphere Enhanced
+                                </div>
+                                <img src="https://astrogeology.usgs.gov//cache/images/04085d99ec3713883a9a57f42be9c725_valles_marineris_enhanced.tif_thumb.png" alt="hemisphere" style="width:50%;">
+                                <div class="caption" style="font-weight:bold;">
+                                    Valles Marineris Hemisphere Enhanced
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>
